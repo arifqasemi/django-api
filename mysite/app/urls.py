@@ -1,6 +1,7 @@
 from django.urls import path
 # from app.views import QuestionsView,AnswerView,QuestionDetail,AnswerDetail,TestView,LessonsView,QuestionsMAView,MultiAnswerView,TestMultiAnswer
 from app.views import test
+app_name = 'app' 
 urlpatterns = [
     path('home/',test, name='home')
     # path('lessons/',LessonsView.as_view(),name='lessons' ),
