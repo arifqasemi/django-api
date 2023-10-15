@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from app.serializer import QuestionsSerializer , AnswerSerializer,ScoreSerializer,LessonSerializer,QuestionsMASerializer,MultiAnswerSerializer
@@ -8,6 +8,8 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
 
+def test(request):
+    return HttpResponse(request,'heleleo')
 
 class LessonsView(APIView):
     def get(self,request):
